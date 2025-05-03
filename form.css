@@ -39,11 +39,6 @@ textarea {
     box-sizing: border-box;
 }
 
-textarea {
-    resize: vertical;
-    height: 80px;
-}
-
 .radio-group {
     margin-top: 5px;
 }
