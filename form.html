@@ -11,7 +11,7 @@
 <body>
     <div class="form-container">
         <h2>Web Form</h2>
-        <form>
+        <form action="https://formspree.io/f/xyzabcd" method="POST">
             <label for="fullName">Full Name</label>
             <input type="text" id="fullName" name="Full Name" required>
 
@@ -29,7 +29,7 @@
 
             <label for="department">Department</label>
             <select id="department" name="Department">
-                <option value="">--- Select Department ---</option>
+                <option value="">-- Select Department --</option>
                 <option value="HR">HR</option>
                 <option value="Sales">Sales</option>
                 <option value="Development">Development</option>
@@ -37,16 +37,17 @@
                 <option value="Others">Others</option>
             </select>
 
-            <label for="gender">Gender</label>
-            <select id="gender" name="Gender">
-                <option value="">--- Select Gender ---</option>
-                <option value="Male">Male</option>
-                <option value="HR">Female</option>
-                <option value="Sales">Prefer Not to say</option>
-            </select>
+            <label>Gender</label>
+            <div class="radio-group">
+                <label><input type="radio" name="Gender" value="Male"> Male</label>
+                <label><input type="radio" name="Gender" value="Female"> Female</label>
+                <label><input type="radio" name="Gender" value="Prefer not to say"> Prefer not to say</label>
+            </div>
+
             <button type="submit" class="submit-button">Submit</button>
         </form>
     </div>
+
 </body>
 
 </html>
