@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Web Form</title>
+    <link rel="stylesheet" href="form.css" />
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Web Form</h2>
+        <form>
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="Full Name" required>
+
+            <label for="contact">Contact Number</label>
+            <input type="tel" id="contact" name="Contact Number" required>
+
+            <label for="address">Address</label>
+            <textarea id="address" name="Address" required></textarea>
+
+            <label for="company">Company Name</label>
+            <input type="text" id="company" name="Company Name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="Email" required>
+
+            <label for="department">Department</label>
+            <select id="department" name="Department">
+                <option value="">--- Select Department ---</option>
+                <option value="HR">HR</option>
+                <option value="Sales">Sales</option>
+                <option value="Development">Development</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Others">Others</option>
+            </select>
+
+            <label for="gender">Gender</label>
+            <select id="gender" name="Gender">
+                <option value="">--- Select Gender ---</option>
+                <option value="Male">Male</option>
+                <option value="HR">Female</option>
+                <option value="Sales">Prefer Not to say</option>
+            </select>
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
